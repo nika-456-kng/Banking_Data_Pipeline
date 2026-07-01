@@ -19,9 +19,8 @@ The system processes streaming transactions through three decoupled processing e
 
 To witness the entire event-driven architecture running concurrently, open three parallel terminals:
 
-**Terminal 1 (Ingestion Service):**
+**In terminal:**
 ```bash
 python producer.py
 python spark_processor.py
-# (Copy raw JSON strings from Terminal 1 here to watch automated structural parsing)
 python dbt_simulator.py
